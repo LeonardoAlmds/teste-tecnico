@@ -5,7 +5,7 @@ import zipfile
 
 class DataTransformation:
     def __init__(self):
-        self.output_dir = "teste_2"
+        self.output_dir = "teste_2/data"
         self.path_data = f"{self.output_dir}/Anexo_1.pdf"
         self.name_output_data = f"{self.output_dir}/dados_extraidos.csv"
 
