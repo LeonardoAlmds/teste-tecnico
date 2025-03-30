@@ -65,7 +65,7 @@ class DataTransformation:
 
     def compress_file(self, file_path):
         try:
-            zip_file = f"{self.output_dir}/Teste_Leonardo_Silva_de_Almeida.zip"
+            zip_file = os.path.join(self.output_dir, "Teste_{Leonardo_Silva_de_Almeida}.zip")
 
             with zipfile.ZipFile(zip_file, 'w') as zipf:
                 zipf.write(file_path, arcname=os.path.basename(file_path)) 
