@@ -1,0 +1,36 @@
+create table T1_2023 (
+	`DATA` date,
+    REG_ANS varchar(6),
+    CD_CONTA_CONTABIL varchar(255),
+    DESCRICAO VARCHAR(255),
+    VL_SALDO_INICIAL DECIMAL(15,2),
+    VL_SALDO_FINAL DECIMAL(15,2)
+);
+
+create table T2_2023 (
+	`DATA` date,
+    REG_ANS varchar(6),
+    CD_CONTA_CONTABIL varchar(255),
+    DESCRICAO VARCHAR(255),
+    VL_SALDO_INICIAL DECIMAL(15,2),
+    VL_SALDO_FINAL DECIMAL(15,2)
+);
+
+create table T3_2023 (
+	`DATA` date,
+    REG_ANS varchar(6),
+    CD_CONTA_CONTABIL varchar(255),
+    DESCRICAO VARCHAR(255),
+    VL_SALDO_INICIAL DECIMAL(15,2),
+    VL_SALDO_FINAL DECIMAL(15,2)
+);
+
+create table T4_2023 (
+	`DATA` date,
+    REG_ANS varchar(6),
+    CD_CONTA_CONTABIL varchar(255),
+    DESCRICAO VARCHAR(255),
+    VL_SALDO_INICIAL DECIMAL(15,2),
+    VL_SALDO_FINAL DECIMAL(15,2)
+);
+
