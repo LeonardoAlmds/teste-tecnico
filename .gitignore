@@ -1,2 +1,2 @@
-/teste_1/venv
-/teste_2/venv
+**/venv
+**/__pycache__/
