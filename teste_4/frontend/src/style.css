@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+:root {
+  --background-color: #fdfdfd;
+  --white: #ffffff;
+
+  --primary: #007bff;
+  --secondary: #d30606;
+  --attention: #ff9100;
+  --green: #39c545;
+  --table-header: #01448b;
+  --table-border: #919191;
+  --row-odd: #ffffff;
+  --row-even: #e9e9e9;
+  --pagination-text: #2e2e2e;
+  --disabled: #ccc;
+  --color-font-table: #292929;
+
+  --font-georama: "Georama", serif;
+  --font-lexend: "Lexend", serif; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

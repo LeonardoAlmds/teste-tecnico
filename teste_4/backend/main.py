@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Query
+from fastapi import FastAPI, Query, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import csv
 import re
@@ -46,5 +46,16 @@ operator_service = OperatorService("Relatorio_cadop.csv")
 
 @app.get("/buscar/nome_fantasia-razao_social")
 def search_operators(q: str = Query(..., description="Search term")):
-    result = operator_service.search_operators(q)
-    return {"total_found": len(result), "operators": result}
+    try:
+        result = operator_service.search_operators(q)
+        return {"total_found": len(result), "operators": result}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Erro ao buscar operadoras: {str(e)}")
+
+@app.get("/buscar/todos")
+def get_all_operators():
+    try:
+        result = operator_service.operators
+        return {"total_found": len(result), "operators": [op.to_dict() for op in result]}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Erro ao buscar todas as operadoras: {str(e)}")

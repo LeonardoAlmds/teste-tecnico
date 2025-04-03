@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "63eaa824-fae0-4abd-a42d-d76b1e5e3222",
+		"name": "Teste_4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43664469",
+		"_collection_link": "https://leonardoalmeida-645498.postman.co/workspace/Leonardo-Almeida's-Workspace~4308dba8-cb9c-414b-81c8-48f72aea73d4/collection/43664469-63eaa824-fae0-4abd-a42d-d76b1e5e3222?action=share&source=collection_link&creator=43664469"
+	},
+	"item": [
+		{
+			"name": "GET - Todos os dados",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/buscar/todos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"buscar",
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Razão Social / Nome Fantasia",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/buscar/nome_fantasia-razao_social?q=caixa",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"buscar",
+						"nome_fantasia-razao_social"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "caixa"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
